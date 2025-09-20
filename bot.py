@@ -11,7 +11,7 @@ REGISTER_BASIC    = "https://smartincome-17.com"      # سجّل الآن - ال
 REGISTER_WEEKLY   = "https://smartincome-17.com/gydpAVV"      # سجّل الآن - مشاركة الفرص الأسبوعية
 NATIONAL_REGISTER = "https://smartincome-17.com"      # سجّل الآن - عروض اليوم الوطني
 FREE_GROUP_LINK   = "https://t.me/+HM9i6LEZsUZhZDRk"
-SUPPORT_LINK      = "https://t.me/ecombassam"
+SUPPORT_LINK      = "https://t.me/abusultan92"
 
 LINK_COVER_CALL   = "https://t.me/smart1in/1226"
 LINK_SNAP         = "https://t.snapchat.com/6MzlRYhF"
