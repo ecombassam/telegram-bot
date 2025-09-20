@@ -47,7 +47,7 @@ def main_menu_markup() -> InlineKeyboardMarkup:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         "مرحباً 👋\n"
-        "أهلاً بك في  Smart Income Bot 🚀\n\n"
+        "أهلاً بك في Smart Income Bot 🚀\n\n"
         "📈 خطوتك لبناء دخل شهري مستقر من سوق الأوبشن\n"
         "🎥 برامج تدريبيه احترافيه تنقلك لمستوى متقدم"
     )
@@ -61,7 +61,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     q = update.callback_query
     await q.answer()
 
-    # ℹ️ معرفة المزيد
+    # ℹ️ مقدمة
     if q.data == CB_MORE_INFO:
         text = (
             "🚀 الاستراتيجيات المتقدمة\n\n"
