@@ -47,9 +47,9 @@ def main_menu_markup() -> InlineKeyboardMarkup:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         "مرحباً 👋\n"
-        "أهلاً بك في بوت برنامج الاستراتيجيات المتقدمة 🚀\n\n"
+        "أهلاً بك في  Smart Income Bot 🚀\n\n"
         "📈 خطوتك لبناء دخل شهري مستقر من سوق الأوبشن\n"
-        "🎥 الدورة مسجّلة بالكامل – تبدأ وقت ما تحب"
+        "🎥 برامج تدريبيه احترافيه تنقلك لمستوى متقدم"
     )
     if update.message:
         await update.message.reply_text(text, reply_markup=main_menu_markup())
@@ -64,7 +64,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # ℹ️ معرفة المزيد
     if q.data == CB_MORE_INFO:
         text = (
-            "🚀 البرنامج التدريبي للاستراتيجيات المتقدمة\n\n"
+            "🚀 الاستراتيجيات المتقدمة\n\n"
             "📌 المميزات:\n"
             "• 🎥 11 درس مسجّل خطوة بخطوة.\n"
             "• 📈 4 استراتيجيات عملية لتحقيق عوائد 8–15% شهريًا.\n"
@@ -131,7 +131,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ])
         await q.edit_message_text(text, reply_markup=kb)
 
-    # 📌 روابط مهمة
+    # 📌 معلومات اضافية
     elif q.data == CB_IMPORTANT_LINKS:
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("📌 شرح الكوفر كول", url=LINK_COVER_CALL)],
