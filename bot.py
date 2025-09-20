@@ -139,7 +139,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif q.data == CB_NATIONAL_OFFER:
         text = (
             "🎉 عروض اليوم الوطني 🇸🇦\n\n"
-            "- العرض ساري حتى نهاية الأسبوع ✅"
+            "- استخدم كود KSA لفترة محدوده ✅"
         )
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("📌 سجّل الآن", url=NATIONAL_REGISTER)],
