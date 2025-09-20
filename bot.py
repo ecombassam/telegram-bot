@@ -140,7 +140,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         text = (
             "🎉 عروض اليوم الوطني 🇸🇦\n\n"
             " استخدم كود\n"
-            " KSA \n"
+            "         KSA \n"
             "لفترة محدوده ✅\n"
         )
         kb = InlineKeyboardMarkup([
