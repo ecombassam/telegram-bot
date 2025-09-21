@@ -38,7 +38,7 @@ def main_menu_markup() -> InlineKeyboardMarkup:
         [InlineKeyboardButton("ℹ️ معرفة المزيد", callback_data=CB_MORE_INFO)],
         [InlineKeyboardButton("📚 أنواع البرامج التدريبية", callback_data=CB_PROGRAMS)],
         [InlineKeyboardButton("🎉 عروض اليوم الوطني", callback_data=CB_NATIONAL_OFFER)],
-        [InlineKeyboardButton("📌 روابط مهمة", callback_data=CB_IMPORTANT_LINKS)],
+        [InlineKeyboardButton("📌 اجابة لاكثر الاسئلة", callback_data=CB_IMPORTANT_LINKS)],
         [InlineKeyboardButton("👥 الانضمام إلى قروب مجاني", callback_data=CB_GROUP)],
         [InlineKeyboardButton("🤖 الدعم الفني", callback_data=CB_SUPPORT)],
     ])
