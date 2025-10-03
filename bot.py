@@ -9,7 +9,6 @@ TELEGRAM_TOKEN = "7685861730:AAGn4h7VL8T55kjXrRED5lqdFs8oz7n8W78"
 REGISTER_ADVANCED = "https://smartincome-17.com/xvvXKYw"      # سجّل الآن - برنامج الاستراتيجيات المتقدمة
 REGISTER_BASIC    = "https://smartincome-17.com"      # سجّل الآن - البداية من الصفر
 REGISTER_WEEKLY   = "https://smartincome-17.com/gydpAVV"      # سجّل الآن - مشاركة الفرص الأسبوعية
-NATIONAL_REGISTER = "https://smartincome-17.com"      # سجّل الآن - عروض اليوم الوطني
 FREE_GROUP_LINK   = "https://t.me/+HM9i6LEZsUZhZDRk"
 SUPPORT_LINK      = "https://t.me/abusultan92"
 
@@ -135,19 +134,6 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ])
         await q.edit_message_text(text, reply_markup=kb)
 
-    # 🎉 عروض اليوم الوطني
-    elif q.data == CB_NATIONAL_OFFER:
-        text = (
-            "🎉 عروض اليوم الوطني 🇸🇦\n\n"
-            " استخدم كود\n"
-            "                                    KSA \n"
-            "لفترة محدوده ✅\n"
-        )
-        kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("📌 سجّل الآن", url=NATIONAL_REGISTER)],
-            [InlineKeyboardButton("⬅️ رجوع", callback_data=CB_BACK_MAIN)],
-        ])
-        await q.edit_message_text(text, reply_markup=kb)
 
     # 📌 معلومات اضافية
     elif q.data == CB_IMPORTANT_LINKS:
