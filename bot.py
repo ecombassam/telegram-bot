@@ -46,7 +46,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         "مرحباً 👋\n"
         "أهلاً بك في Smart Income Bot 🚀\n\n"
-        "📈 خطوتك لبناء دخل شهري مستقر من سوق الأوبشن\n"
+        "📈 خطوتك لبناء دخل شهري مستقر من الأوبشن\n"
         "🎥 برامج تدريبيه احترافيه تنقلك لمستوى متقدم"
     )
     if update.message:
