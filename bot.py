@@ -35,7 +35,7 @@ CB_PROG_WEEKLY      = "prog_weekly"
 def main_menu_markup() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("ℹ️ معرفة المزيد", callback_data=CB_MORE_INFO)],
-        [InlineKeyboardButton("📚 أنواع البرامج التدريبية", callback_data=CB_PROGRAMS)],
+        [InlineKeyboardButton("📚 البرامج التدريبية", callback_data=CB_PROGRAMS)],
         [InlineKeyboardButton("📌 اجابة لاكثر الاسئلة", callback_data=CB_IMPORTANT_LINKS)],
         [InlineKeyboardButton("👥 الانضمام إلى قروب مجاني", callback_data=CB_GROUP)],
         [InlineKeyboardButton("🤖 الدعم الفني", callback_data=CB_SUPPORT)],
@@ -75,16 +75,15 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "✅ خطة مدروسة بدل العشوائية."
         )
         kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("📚 أنواع البرامج التدريبية", callback_data=CB_PROGRAMS)],
+            [InlineKeyboardButton("📚 البرامج التدريبية", callback_data=CB_PROGRAMS)],
             [InlineKeyboardButton("⬅️ رجوع", callback_data=CB_BACK_MAIN)],
         ])
         await q.edit_message_text(text, reply_markup=kb)
 
-    # 📚 أنواع البرامج التدريبية
+    # 📚 البرامج التدريبية
     elif q.data == CB_PROGRAMS:
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("📈 برنامج الاستراتيجيات المتقدمة", callback_data=CB_PROG_ADVANCED)],
-            [InlineKeyboardButton("📊 البداية من الصفر للأوبشن", callback_data=CB_PROG_BASIC)],
             [InlineKeyboardButton("📅 مشاركة الفرص الأسبوعية", callback_data=CB_PROG_WEEKLY)],
             [InlineKeyboardButton("⬅️ رجوع", callback_data=CB_BACK_MAIN)],
         ])
